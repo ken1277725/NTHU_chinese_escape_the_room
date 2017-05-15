@@ -1,7 +1,21 @@
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .question{
 	border-radius:10px;
 	border-color:lightgreen;
 	border:2px solid; 
 	padding:5px;
 	margin:10px;
+}
+
+.background{
+	z-index :30;
+	/*background-image: url(  "https://i2.read01.com/uploads/09TQs107.jpg");
+	background-size: cover;　
+	background-repeat:no-repeat;*/
 }

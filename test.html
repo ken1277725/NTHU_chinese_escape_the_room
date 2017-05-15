@@ -5,13 +5,9 @@
 			src="https://code.jquery.com/jquery-3.2.1.min.js"
 			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous"></script>
-    <!-- 最新編譯和最佳化的 CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-	<!-- 最新編譯和最佳化的 JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
 		<title>
 			密室逃脫
 		</title>
@@ -19,6 +15,7 @@
 		<link rel="stylesheet" href="test.css">
 	</head>
 	<body style="background-color: black; color:lightgreen;">
+		<section class = "background ">
 		<div class="question">
 			<p>	1.請問基本寫作類型不包括哪一個？</p>
 			<input type= "radio" id="1" name="question_1"> (A) 描寫
@@ -78,33 +75,97 @@
 		
 		<p>	"6.	小說的象徵物不論是物件、影像或地點，都引導我們對角色做出回應，他們不只跟角色連結起來，也與角色的概念相關。</p>
 		<p>請問下列象徵物與角色的配對何者正確？"</p>
-		<input type= "radio" id="26" name="question_5"> (A) 葉尊麟：碟仙
-		<input type= "radio" id="27" name="question_5"> (B) 漢斯：小提琴
-		<input type= "radio" id="28" name="question_5"> (C) 紋：綠光燈塔
-		<input type= "radio" id="29" name="question_5"> (D) 汪淼：鐵馬
-		<input type= "radio" id="30" name="question_5"> (E) 馬提亞：質數
+		<input type= "radio" id="26" name="question_6"> (A) 葉尊麟：碟仙
+		<input type= "radio" id="27" name="question_6"> (B) 漢斯：小提琴
+		<input type= "radio" id="28" name="question_6"> (C) 紋：綠光燈塔
+		<input type= "radio" id="29" name="question_6"> (D) 汪淼：鐵馬
+		<input type= "radio" id="30" name="question_6"> (E) 馬提亞：質數
 		<br>
 		</div>
 		<div class="question">
 		
 		<p>	"7.	「許多年之後，當他面對行刑隊，奧雷良諾‧布恩地亞上校將會回想起，他父親帶他去尋找冰塊的那個遙遠的下午。」請問這句是哪一本小說的開頭？ "</p>
-		<input type= "radio" id="31" name="question_6"> (A) 芬尼根守靈夜 
-		<input type= "radio" id="32" name="question_6"> (B) 傲慢與偏見
-		<input type= "radio" id="33" name="question_6"> (C) 百年孤寂
-		<input type= "radio" id="34" name="question_6"> (D) 如果在冬夜一個旅人
-		<input type= "radio" id="35" name="question_6"> (E) 一九八四
+		<input type= "radio" id="31" name="question_7"> (A) 芬尼根守靈夜 
+		<input type= "radio" id="32" name="question_7"> (B) 傲慢與偏見
+		<input type= "radio" id="33" name="question_7"> (C) 百年孤寂
+		<input type= "radio" id="34" name="question_7"> (D) 如果在冬夜一個旅人
+		<input type= "radio" id="35" name="question_7"> (E) 一九八四
 		<br>
 		</div>
 		<div class="question">
 		
 		<p>	8.在「三體遊戲」中，如果世界進入漫長的嚴寒</p>
 		<p>，連二氧化碳都結冰，請問是何種天象造成的？</p>
-		<input type= "radio" id="36" name="question_7"> (A) 二顆飛星
-		<input type= "radio" id="37" name="question_7"> (B) 三顆飛星
-		<input type= "radio" id="38" name="question_7"> (C) 三日連珠
-		<input type= "radio" id="39" name="question_7"> (D) 三日凌空
-		<input type= "radio" id="40" name="question_7"> (E) 飛星不動
+		<input type= "radio" id="36" name="question_8"> (A) 二顆飛星
+		<input type= "radio" id="37" name="question_8"> (B) 三顆飛星
+		<input type= "radio" id="38" name="question_8"> (C) 三日連珠
+		<input type= "radio" id="39" name="question_8"> (D) 三日凌空
+		<input type= "radio" id="40" name="question_8"> (E) 飛星不動
 		<br>
 		</div>
+
+		<a href ="#">
+			<div class = "question " onclick ="checkans()">
+				送出答案 
+			</div>
+		</a>
+<!--
+<div>
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id ="accpept" aria-hidden="true"></button>
+</div>-->
+<div style="background-color: black;" class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="/*color:green;*/" >
+        <div style="background-color: black;" class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title" id="myModalLabel">第八十七號文明在「三日亂舞」的疊加態中毀滅了，該文明進化至核能階段。</h3>
+            </div>
+            <div class="modal-body" >您將得到第一個字母「F」，以及密碼「9527」。
+					漫長的時間後，生命和文明將重新啟動，再次開始在三體世界中命運莫測地進化。
+					歡迎再次登入。
+			</div>
+            <div class="modal-footer">
+                <button type="button" class="btn  btn-danger" data-dismiss="modal">關閉</button>
+                <!--<button type="button" class="btn btn-primary">提交更改</button>-->
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+		
+		
+		</section>
 	</body>
+	<script>
+		function checkans(){
+			/*console.log("!");*/
+			if(document.getElementById("2").checked == false){
+				return "1";
+			}
+			if(document.getElementById("9").checked == false){
+				return "2";
+			}
+			if(document.getElementById("14").checked == false){
+				return "3";
+			}
+			if(document.getElementById("16").checked == false){
+				return "4";
+			}
+			if(document.getElementById("22").checked == false){
+				return "5";
+			}
+			if(document.getElementById("30").checked == false){
+				return "6";
+			}
+			if(document.getElementById("33").checked == false){
+				return "7";
+			}
+			if(document.getElementById("37").checked == false){
+				return "8";
+			}
+			console.log("yes youfinish it");
+			$("#myModal").modal('show');           
+			return true;
+		}
+	</script>
 </html>
